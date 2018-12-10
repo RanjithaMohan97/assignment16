@@ -1,0 +1,17 @@
+[
+    {
+    "id":1,
+    "name":"Ram",
+    "location":"chennai"
+    },
+    {
+    "id":2,
+    "name":"Krish",
+    "location":"coimbatore"
+    },
+    {
+    "id":3,
+    "name":"Karna",
+    "location":"madurai"
+    }
+]

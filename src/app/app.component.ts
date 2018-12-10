@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
-
+import {UserService} from './user.service';
+import {Users} from './users';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'assignment16';
+  users1 : Users[];
+  constructor(private _userService:UserService){
+
+  }
+  ngOnInit(){
+    this._userService.getUsers().subscribe(u => this.users1=u);
+
+  }
 }
